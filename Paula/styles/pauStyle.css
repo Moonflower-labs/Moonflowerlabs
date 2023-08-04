@@ -1,0 +1,85 @@
+section {
+  padding: 50px 0;
+}
+img.logo {
+  filter: drop-shadow(0rem 0rem 1rem rgb(202, 42, 255));
+  width: 100px;
+  height: 100px;
+}
+.home-image {
+  filter: drop-shadow(0 0 1.2rem rgb(155, 46, 244));
+}
+p.h2 span,
+h1 div.paula,
+h1.about {
+  text-shadow: -1px 3px 2.6px rgb(44, 13, 69);
+}
+div.header {
+  background: linear-gradient(
+    125deg,
+    rgb(153, 135, 188),
+    rgb(151, 29, 167),
+    rgb(88, 45, 122) 70%
+  );
+}
+
+.card img {
+  max-height: 350px;
+}
+section.home {
+  background-image: url("../images/green-leaf-forest_1150-12333.avif");
+
+  background-size: cover;
+}
+.blur {
+  position: relative;
+  width: 100vw;
+  height: 80%;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+.footer i {
+  font-size: 2rem;
+}
+section#reviews i {
+  color: rgb(242, 222, 70);
+}
+nav button {
+  background-color: bisque;
+}
+button.navbar-toggler {
+  color: rgb(235, 230, 160);
+  font-size: 1rem;
+  border: none;
+}
+
+footer {
+  background: linear-gradient(130deg, rgb(177, 89, 177), rgb(90, 23, 222) 70%);
+}
+footer div h6 {
+  position: relative;
+  bottom: -15px;
+}
+footer,
+footer i {
+  filter: drop-shadow(0px 0px 5px rgb(192, 189, 172));
+}
+
+footer img {
+  padding: 0.5rem;
+  height: 100px;
+  filter: drop-shadow(0 0 1.5rem rgb(28, 20, 34));
+}
+
+#reviewForm {
+  display: none;
+}
+.ratingStars i {
+  cursor: pointer;
+  font-size: 2rem;
+}
+button.btn {
+  background: linear-gradient(130deg, rgb(155, 108, 199), rgb(54, 35, 176));
+  box-shadow: 0px 0px 15px 1px rgb(119, 28, 59);
+}

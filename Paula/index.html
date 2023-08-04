@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paula Landin Chiromassage</title>
+    <link
+      rel="icon"
+      href="images/pink-yellow-flower-with-diamond-center_1340-37308.avif"
+      type="icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles/pauStyle.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--  * * header * * -->
+    <div class="container-fluid bg-body-secondary p-3 header">
+      <div class="row">
+        <div class="col d-flex justify-content-around align-items-center">
+          <p class="h2">
+            Welcome to
+            <span class="fw-bold text-warning h1"
+              >Paula Landin Quiromassage</span
+            >
+          </p>
+
+          <img
+            class="rounded-circle d-md-block logo"
+            src="images/blue-lotus-flower_1373-20.avif"
+            alt="Lotus flower"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- * * navbar * * -->
+    <!-- ? * navbar expand md to expand beyond medium size screens * -->
+    <nav
+      class="navbar navbar-expand-md bg-warning-subtle py-1 sticky-top flex-wrap"
+    >
+      <div class="container-lg border-2">
+        <a href="#home" class="navbar-brand" aria-current="page">
+          <img
+            src="images/pink-yellow-flower-with-diamond-center_1340-37308.avif"
+            alt="Lotus"
+            width="30"
+            height="24"
+            class="rounded-circle"
+          />
+          <span class="fw-bold text-body-emphasis"
+            >Paula Landin Chiromassage</span
+          >
+        </a>
+        <!-- * * toggle button for mobile nav * * -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- * * navbar links * * -->
+        <div
+          class="collapse navbar-collapse justify-content-center align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#location"
+                >How to find us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#bookings">Bookings</a>
+            </li>
+            <!-- * * option showing as a button from medium screens onwards -->
+            <li class="nav-item d-none d-md-inline">
+              <a class="btn btn-outline-warning" href="#bookings">Bookings</a>
+            </li>
+            <!-- * Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu bg-warning-subtle">
+                <li>
+                  <a class="dropdown-item" href="#contactForm">Contact Form</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#footer">Social media</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- * * home ** -->
+    <section id="home" class="home">
+      <div class="container blur">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center">
+            <h1>
+              <div class="display-2 text fw-medium text-warning paula">
+                Paula Landin
+              </div>
+              <div class="display-5 fw-bold text-muted">Chiromassage</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Restore balance and vitality with the healing touch of nature.
+            </p>
+            <a href="#prices" class="btn btn-outline-dark btn-lg">Prices</a>
+          </div>
+          <div class="col-md-5 text-center mx-auto">
+            <img
+              class="img-fluid d-none d-md-block rounded-4 home-image"
+              src="images/spa-arrangement-with-stones-candle_23-2148290942.avif"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- * * about * * -->
+
+    <section id="about" class="bg-dark-subtle">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8 text-center">
+            <h1 class="about">
+              <div class="display-2 text fw-medium text-warning">About</div>
+              <div class="display-5 text-muted">
+                What is Chiromassage Therapy?
+              </div>
+            </h1>
+            <p>
+              Chiromassage therapy is a manual technique that combines
+              principles of chiropractic and massage therapy. It focuses on the
+              manipulation of soft tissues, joints, and muscles to relieve pain,
+              tension, and stress. This therapeutic approach has been shown to
+              benefit individuals of all ages, backgrounds, and fitness levels.
+              Chiromassage therapy employs various massage techniques to address
+              specific areas of the body that are causing discomfort. This type
+              of massage involves the use of different hand movements, such as
+              kneading, tapping, and circular motions, to help release tight
+              muscles and promote circulation. It also incorporates gentle joint
+              mobilization to improve range of motion and reduce pain. In
+              ancient China, massage appears as one of the three forms of
+              healing with acupuncture and moxibustion.
+            </p>
+            <p class="display-5">
+              What are the benefits of Chiromassage Therapy?
+            </p>
+            <p>
+              One of the main benefits of chiromassage therapy is that it can
+              help relieve pain and tension in the body. Whether you are
+              experiencing chronic pain or have a recent injury, chiromassage
+              therapy can help alleviate symptoms. It can also help reduce
+              stress and anxiety, which can have a positive impact on overall
+              health. Another benefit of chiromassage therapy is that it can
+              improve posture and flexibility. This is particularly important
+              for individuals who sit at a desk for long periods or engage in
+              activities that require repetitive motions. Regular chiromassage
+              therapy can help prevent the development of muscle imbalances and
+              joint restrictions, which can lead to pain and discomfort.
+            </p>
+            <p class="display-5">
+              How can you benefit from Chiromassage Therapy?
+            </p>
+            <p>
+              Chiromassage therapy is a highly effective way to improve overall
+              health and wellness. Whether you are dealing with chronic pain or
+              simply looking to reduce stress, our chiromassage therapy can
+              provide a range of benefits. Advanced Chiromassage in Camarillo is
+              an excellent choice for those seeking this type of therapy, as we
+              have a team of skilled therapists who can provide personalized
+              treatment to help clients achieve their health goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * * services * * -->
+    <section id="services" class="bg-success-subtle">
+      <div class="container text-center">
+        <p class="h1 text-warning mb-4">Our Services</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/close-up-beautiful-african-woman-enjoying-massage-spa-salon_176420-13959.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Deep Tissue Massage</h5>
+                <p class="card-text">
+                  A deep tissue massage is a particular massage technique that
+                  uses slow strokes and sustained pressure to target the inner
+                  layers of muscles, deep below the surface. It's used primarily
+                  to treat musculoskeletal problems and to aid recovery from
+                  vigorous physical activity or sports injuries, but it also has
+                  wider applications that can improve the body, mind and soul of
+                  anyone receiving the treatment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/hands-physiotherapist-applying-pressure-massage-young-man-s-knee-hospital_662251-1694.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sports Massage</h5>
+                <p class="card-text">
+                  Sports massage is a form of massage involving the manipulation
+                  of soft tissue to benefit a person engaged in regular physical
+                  activity. Soft tissue is connective tissue that has not
+                  hardened into bone and cartilage; it includes skin, muscles,
+                  tendons, ligaments and fascia (a form of connective tissue
+                  that lines and ensheathes the other soft tissues). Sports
+                  massage is designed to assist in correcting problems and
+                  imbalances in soft tissue that are caused from repetitive and
+                  strenuous physical activity and trauma.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/woman-receiving-foot-massage-service-from-masseuse-close-up-hand-foot-relax-foot-massage-therapy-service-concept_1150-13709.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Reflexology</h5>
+                <p class="card-text">
+                  Reflexology is a technique that applies gentle pressure to
+                  your feet or hands. It aims to bring about a state of
+                  relaxation and help the body's own healing process.
+                  Reflexology works in a similar way to acupressure and
+                  acupuncture. Reflexologists believe there are certain points
+                  on the feet and hands. These points correspond to the organs
+                  and glands in the body. So by pressing and massaging these
+                  points it can stimulate energy pathways in the body. If any
+                  energy pathways are blocked reflexology aims to unblock them.
+                  Allowing the energy to flow freely again which aims to restore
+                  balance to the body.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/close-up-hand-holding-acupuncture-needle_23-2148815311.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Acupuncture</h5>
+                <p class="card-text">
+                  Acupuncture is an ancient Chinese medicine-based approach to
+                  treating a variety of conditions by triggering specific points
+                  on the skin with needles.Acupuncture has been in use in some
+                  form for at least 2,500 years. It originated from traditional
+                  Chinese medicine but has gained popularity worldwide since the
+                  1970s.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/moxibustion-chinese-medicine_1387-210.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-0">
+                <h5 class="card-title">Moxibustion</h5>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What is it?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong> Moxibustion is</strong>
+                        a form of therapy that entails the burning of mugwort
+                        leaves. This is a small, spongy herb that is believed to
+                        enhance healing with acupuncture. As such, the leaves
+                        are burnt close to the skin's surface using a stick to
+                        apply heat.The practice is derived from Chinese
+                        medicine. Its purpose is to strengthen the blood,
+                        stimulate the flow of Qi or energy, and maintain good
+                        health. According to Chinese medicine, an increase in
+                        the circulation of Qi can help your body deal with a
+                        broad range of issues, including digestive problems and
+                        chronic pain.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Benefits
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/close-up-therapist-massaging-palm_23-2148882181.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Accupressure</h5>
+                <p class="card-text">
+                  Acupressure is an alternative medicine technique often used in
+                  conjunction with acupuncture or reflexology. It is based on
+                  the concept of life energy, which flows through "meridians" in
+                  the body. In treatment, physical pressure is applied to
+                  acupuncture points, or ashi trigger points, with the aim of
+                  clearing blockages in these meridians. Pressure may be applied
+                  by hand, by elbow, or with various devices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="images/brown-bottles-with-oils-greenery-flowers-lie-brown-napkin_8353-7037.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bach flower remedies</h5>
+                <p class="card-text">
+                  Bach flower remedies are tinctures of water and wild plant
+                  extracts. Edward Bach, a doctor and homeopath, believed that
+                  energy from flowers and plants could reduce negative emotions.
+                  In the early 1900s, he created these remedies as a way to
+                  improve well-being. He compiled a list of 38 flowers and trees
+                  and ascribed a mental health use for each.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * * prices * * -->
+    <section id="prices" class="bg-body-secondary">
+      <div class="container text-center">
+        <p class="h1 fw-bold text-warning mb-3">Prices</p>
+        <div class="table-responsive">
+          <table
+            class="table table-light table-hover align-middle table-bordered"
+          >
+            <thead class="table-warning">
+              <caption>
+                <i class="bi bi-exclamation-circle"></i>
+                Also Bach Flower drops avaliable
+              </caption>
+              <tr>
+                <th scope="col">Treatment</th>
+                <th scope="col">30 minutes</th>
+                <th scope="col">60 minutes</th>
+                <th scope="col">90 minutes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Deep Tissue</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+              <tr class="align-bottom">
+                <th scope="row">Sports Massage</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+              <tr>
+                <th scope="row">Reflexology</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+              <tr>
+                <th scope="row">Acupuncture</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+              <tr>
+                <th scope="row">Moxibustion</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+              <tr>
+                <th scope="row">Accupressure</th>
+                <td>£35</td>
+                <td>£55</td>
+                <td>£65</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- * * reviews * * -->
+    <section id="reviews" class="bg-body-tertiary">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Customer reviews</h2>
+          <p class="lead">How our customers feel</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div id="reviewContainer" class="list-group">
+              <div class="list-group-item py-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+                <h5 class="mb-1">Great mobility improvment</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Tempore sint doloribus sit debitis natus dignissimos animi
+                  repudiandae laboriosam a, ipsa sunt reprehenderit saepe
+                  veritatis suscipit. Expedita eum vitae praesentium ratione!
+                </p>
+              </div>
+              <div class="list-group-item py-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+                <h5 class="mb-1">Awesome treatment</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Tempore sint doloribus sit debitis natus dignissimos animi
+                  repudiandae laboriosam a, ipsa sunt reprehenderit saepe
+                  veritatis suscipit. Expedita eum vitae praesentium ratione!
+                </p>
+              </div>
+              <div class="list-group-item py-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+                <h5 class="mb-1">Definetly coming back!</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Tempore sint doloribus sit debitis natus dignissimos animi
+                  repudiandae laboriosam a, ipsa sunt reprehenderit saepe
+                  veritatis suscipit. Expedita eum vitae praesentium ratione!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <button class="btn btn-dark w-25" id="reviewBtn">Review</button>
+        </div>
+      </div>
+      <!-- * Customer review form -->
+      <div class="row justify-content-center my-5">
+        <div class="col-sm-8 col-lg-5">
+          <form action="" id="reviewForm">
+            <div class="ratingStars mb-4 text-center">
+              <p class="lead">Rating</p>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+
+            <label for="reviewTittle" class="form-label">Tittle</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-chat-left-heart"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="reviewTittle"
+                placeholder="review tittle"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="reviewBody" class="form-label"
+                >Leave your review</label
+              >
+              <textarea
+                class="form-control"
+                id="reviewBody"
+                rows="8"
+              ></textarea>
+            </div>
+            <div class="mb-4 text-center">
+              <button id="subBtn" type="submit" class="btn btn-secondary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- * Location -->
+    <section id="location">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-6 mx-auto">
+            <p class="display-2 mb-4">How to find us</p>
+            <p class="mb-3 pb-2">
+              See our location in the map below and get directions.
+            </p>
+            <div class="col ratio ratio-16x9 mb-2">
+              <iframe
+                class="embed-responsive-item rounded-2 shadow"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2943.4553164278836!2d-8.583417550000014!3d42.460604000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squiromasaje%20paula%20landin%20maps!5e0!3m2!1sen!2suk!4v1690052751671!5m2!1sen!2suk"
+                width=""
+                height=""
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * * contact us * * -->
+    <!-- * * form-control, form-label, form-select, input-group, input-group-text * * -->
+    <section id="contactForm" class="bg-dark-subtle">
+      <div class="container-lg text-center">
+        <h2>Get in touch</h2>
+        <p class="lead">
+          Have any questions? Fill out the form to contact us directly
+        </p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-sm-8 col-lg-5">
+          <form action="" id="contact" method="post">
+            <label for="email" class="form-label">Email address</label>
+            <!-- ? * * input-group + input-group-text to insert icon * * -->
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-at-fill"></i>
+              </span>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="e.g. myname@example.com"
+              />
+            </div>
+            <label for="name" class="form-label">Name</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+              </span>
+              <input
+                type="name"
+                id="name"
+                class="form-control"
+                placeholder="e.g. Harry"
+              />
+            </div>
+
+            <label for="subject" class="form-label"
+              >What would you like to ask about?</label
+            >
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-chat-dots-fill"></i>
+              </span>
+              <select class="form-select" id="subject">
+                <option value="Treatments" selected>Treatment query</option>
+                <option value="Prices">Pricing query</option>
+                <option value="Other">Other query</option>
+              </select>
+            </div>
+
+            <div class="form-floating mb-4 mt-5">
+              <textarea
+                name=""
+                class="form-control"
+                id="query"
+                style="height: 140px"
+              ></textarea>
+              <label for="query">Your query...</label>
+            </div>
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- * * footer * * -->
+    <footer id="footer" class="footer">
+      <div class="container-fluid">
+        <div class="row align-content-center">
+          <div class="col d-flex justify-content-between align-items-center">
+            <a href="tel:0034-616-389-366"
+              ><i class="bi bi-whatsapp m-3" style="color: limegreen"></i
+            ></a>
+            <a href="https://www.facebook.com/profile.php?id=100054416862874"
+              ><i class="bi bi-facebook m-3" style="color: cornflowerblue"></i
+            ></a>
+            <a
+              href="https://instagram.com/quiromasajepaulalandin?igshid=MzNlNGNkZWQ4Mg=="
+              ><i class="bi bi-instagram m-3" style="color: violet"></i
+            ></a>
+          </div>
+          <div class="col d-flex justify-content-between align-items-center">
+            <img src="./images/cofenat-logo.png" alt="cofenat logo" />
+            <h6 class="text-muted text-end m-3">Website by Moonflower Labs.</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
