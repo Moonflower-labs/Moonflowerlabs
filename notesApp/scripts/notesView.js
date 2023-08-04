@@ -9,13 +9,17 @@ export default class NotesView {
     this.onNoteEdit = onNoteEdit;
     this.onNoteDelete = onNoteDelete;
     this.root.innerHTML = `
+        <div class="col-md-4 ">
           <div class="notes__sidebar">
-              <button class="notes__add" type="button">Add Note</button>
+              <button class="notes__add btn btn-lg btn-outline-warning my-3 mx-3" type="button">Add Note</button>
               <div class="notes__list"></div>
           </div>
-          <div class="notes__preview">
-              <input class="notes__title" type="text" placeholder="New Note...">
-              <textarea class="notes__body">Take Note...</textarea>
+          </div>
+          <div class="col-md-8">
+        <div class="notes__preview">
+              <input class="notes__title my-2 py-2" type="text" placeholder="New Note...">
+              <textarea class="notes__body my-5 ">Write your Note...</textarea>
+          </div>
           </div>
       `;
 
@@ -43,7 +47,7 @@ export default class NotesView {
     const MAX_BODY_LENGTH = 60;
 
     return `
-          <div class="notes__list-item" data-note-id="${id}">
+          <div class="notes__list-item mb-3" data-note-id="${id}">
               <div class="notes__small-title">${title}</div>
               <div class="notes__small-body">
                   ${body.substring(0, MAX_BODY_LENGTH)}
