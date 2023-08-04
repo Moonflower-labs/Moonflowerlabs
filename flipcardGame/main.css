@@ -139,7 +139,6 @@ img {
   height: 100%;
   text-align: center;
   background: #c3b584;
-  transform: rotateY(0deg) rotateZ(0deg);
 }
 .win-text {
   font-size: 2.5rem;

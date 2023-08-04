@@ -54,6 +54,7 @@ export default class NotesView {
                   ${body.length > MAX_BODY_LENGTH ? "..." : ""}
               </div>
               <div class="notes__small-updated">
+              <i class="bi bi-question-circle float-start" title="Double click to delete."></i>
                   ${updated.toLocaleString(undefined, {
                     dateStyle: "full",
                     timeStyle: "short",
