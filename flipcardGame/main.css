@@ -53,7 +53,7 @@ button {
   box-shadow: 0 10px 30px rgba(245, 244, 244, 0.407);
 }
 .board-container.flipped .board {
-  transform: rotateY(180deg) rotateZ(50deg);
+  transform: rotateY(180deg) rotateZ(0deg);
 }
 
 .board-container.flipped .win {
@@ -152,4 +152,27 @@ img {
 }
 .highlight {
   color: #6f00fc;
+}
+
+/* Add CSS for smaller screens */
+@media (max-width: 350px) {
+  body {
+    padding-bottom: 20%;
+  }
+  .wrapper {
+    width: 80%;
+    height: auto;
+  }
+  .button {
+    width: 100%;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+  }
+  .card-front,
+  .win-text {
+    font-size: 1.8rem;
+  }
 }
