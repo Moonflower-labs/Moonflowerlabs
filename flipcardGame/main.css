@@ -159,6 +159,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .board-container.flipped .board {
+    transform: rotateY(180deg) rotateZ(0deg);
+    -webkit-transform: rotateY(180deg) rotateZ(0deg);
+  }
   .card {
     width: 70px;
     height: 70px;
