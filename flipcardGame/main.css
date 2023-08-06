@@ -1,14 +1,15 @@
-body {
+.container-fluid {
   background-image: url("./images/cartoon-jungle.avif");
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  min-width: 100vw;
   background-repeat: no-repeat;
   font-family: monospace;
-  padding-bottom: 40%;
+  /* padding-bottom: 10%; */
   background-color: #4b941a;
 }
 .moves,
 .timer {
-  color: #eeb524;
   font-size: 1.3rem;
   margin-top: 2%;
 }
@@ -16,41 +17,35 @@ body {
   text-align: center;
   margin: 2rem;
 }
-h1 {
-  color: #eeb524;
-  text-shadow: 3px 3px 2px rgb(171, 134, 24);
-  text-align: center;
-  margin: 2rem;
+h1,
+.stats {
+  text-shadow: 2px 2px 2px rgb(42, 34, 7);
 }
 button {
-  color: rgb(235, 202, 158);
   font-size: 1.2rem;
-  width: 8rem;
-  height: 2rem;
-  cursor: pointer;
+
   background: linear-gradient(90deg, rgb(81, 33, 95), rgb(47, 69, 232));
-  border-radius: 10px;
   border: none;
   box-shadow: 1px 1px 3px 2px rgb(123, 122, 122);
 }
-.wrapper {
-  width: 480px;
-  height: 480px;
+.board-container {
   position: relative;
+  width: 500px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-/* .board-container, */
+
 .board {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
   justify-content: center;
   align-content: center;
-  align-content: center;
-  box-shadow: 0 10px 30px rgba(245, 244, 244, 0.407);
+  /* box-shadow: 0 10px 30px rgba(245, 244, 244, 0.407); */
 }
 .board-container.flipped .board {
   transform: rotateY(180deg) rotateZ(0deg);
@@ -67,7 +62,10 @@ button {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  margin: 5px;
+  margin: 3px;
+  background: none;
+  border: none;
+  box-shadow: 0 10px 30px rgba(245, 244, 244, 0.407);
 }
 .card-front,
 .card-back {
@@ -76,19 +74,18 @@ button {
   width: 100%;
   height: 100%;
   user-select: none;
-  background: #282a3a;
+  background: none;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
   backface-visibility: hidden;
 }
 .card-front {
   background: linear-gradient(120deg, #182953, #2b306a, rgb(50, 89, 153));
-  border: 1px solid rgb(111, 110, 110);
 }
 .card-back {
   font-size: 28pt;
   text-align: center;
-  line-height: 100px;
-  background: #fdf8e6;
+  background: none;
   transform: rotateY(-180deg) rotateZ(50deg);
   user-select: none;
 }
@@ -98,7 +95,7 @@ button {
 .card.flipped .card-front {
   transform: rotateY(180deg) rotateZ(50deg);
 }
-.card.shake {
+/* .card.shake {
   animation: shake 0.35s ease-in-out;
 }
 @keyframes shake {
@@ -118,10 +115,11 @@ button {
   80% {
     transform: translateX(8px);
   }
-}
+} */
 img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 .board,
 .win {
@@ -134,7 +132,6 @@ img {
 }
 .board-container.flipped .win {
   position: absolute;
-
   width: 100%;
   height: 100%;
   text-align: center;
@@ -152,25 +149,18 @@ img {
 .highlight {
   color: #6f00fc;
 }
-
-/* Add CSS for smaller screens */
-@media (max-width: 350px) {
-  body {
-    padding-bottom: 20%;
-  }
-  .wrapper {
-    width: 80%;
-    height: auto;
-  }
-  .button {
-    width: 100%;
+@media (max-width: 767px) {
+  .board-container {
+    width: 330px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
-  .card-front,
   .win-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }

@@ -4,29 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>Flip Card Game</h1>
-    <div class="wrapper">
-      <div class="controls">
-        <button class="button">Start</button>
-        <div class="stats">
-          <div class="moves">0 moves</div>
-          <div class="timer">time: 0 sec</div>
-        </div>
-      </div>
-      <div class="board-container">
-        <div class="board" data-dimension="4">
-          <div class="card">
-            <div class="card-front"></div>
-            <div class="card-back"></div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <h1 class="display-1 text-center text-warning">Flip Card Game</h1>
+
+        <div class="controls col-10 text-center mx-auto">
+          <button class="btn btn-info border-0 rounded-3 w-25 text-warning">
+            Start
+          </button>
+          <div class="stats text-warning">
+            <div class="moves">0 moves</div>
+            <div class="timer">time: 0 sec</div>
           </div>
         </div>
-        <div class="win"></div>
+        <div class="col-md-6 mx-auto">
+          <div class="board-container">
+            <div class="board" data-dimension="4">
+              <div class="card">
+                <div class="card-front"></div>
+                <div class="card-back"></div>
+              </div>
+            </div>
+            <div class="win"></div>
+          </div>
+        </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./scripts/app.js"></script>
   </body>
 </html>
