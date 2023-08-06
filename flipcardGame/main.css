@@ -136,6 +136,7 @@ img {
   height: 100%;
   text-align: center;
   background: #c3b584;
+  z-index: 2;
 }
 .win-text {
   font-size: 2.5rem;
