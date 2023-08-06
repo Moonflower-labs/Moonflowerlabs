@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return newsItem;
   });
 
-  newsItems.forEach((newsItem) => {
-    newsDiv.appendChild(newsItem);
-  });
+  // newsItems.forEach((newsItem) => {
+  //   newsDiv.appendChild(newsItem);
+  // });
 });
