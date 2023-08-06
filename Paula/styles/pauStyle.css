@@ -10,8 +10,8 @@ img.logo {
   filter: drop-shadow(0 0 1.2rem rgb(155, 46, 244));
 }
 p.h2 span,
-h1 div.paula,
-h1.about {
+div.paula,
+div.about {
   text-shadow: -1px 3px 2.6px rgb(70, 34, 99);
 }
 div.header {
