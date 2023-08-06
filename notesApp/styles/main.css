@@ -46,8 +46,9 @@
 .notes__title:focus,
 .notes__body:focus {
   background: none;
-  outline: none;
+  box-shadow: none;
 }
+
 .notes__title {
   font-size: 3em;
   font-weight: bold;
