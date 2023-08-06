@@ -17,8 +17,8 @@ export default class NotesView {
           </div>
           <div class="col-md-8">
         <div class="notes__preview">
-              <input class="notes__title my-2 py-2" type="text" placeholder="New Note...">
-              <textarea class="notes__body my-5 ">Write your Note...</textarea>
+              <input class="notes__title my-2 py-2 form-control" type="text" placeholder="New Note...">
+              <textarea class="notes__body my-5 form-control" rows="6" cols="50" placeholder="Type your note..."></textarea>
           </div>
           </div>
       `;
@@ -54,7 +54,7 @@ export default class NotesView {
                   ${body.length > MAX_BODY_LENGTH ? "..." : ""}
               </div>
               <div class="notes__small-updated">
-              <i class="bi bi-question-circle float-start" title="Double click to delete."></i>
+              <i class="bi bi-question-circle float-start " role="button" data-bs-container="body"  data-bs-toggle="popover" title="Popover title" data-bs-content="Double click to delete."></i>
                   ${updated.toLocaleString(undefined, {
                     dateStyle: "full",
                     timeStyle: "short",
