@@ -1,10 +1,11 @@
 const apiKey = "1b5273f8540268032b6672569e86626a";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-
+const card = document.querySelector(".card");
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
+const background = document.getElementById("bg");
 //* async function
 async function checkWeather(city) {
   //* fetch data
@@ -37,26 +38,28 @@ async function checkWeather(city) {
     weatherIcon.src =
       "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
     if (data.weather[0].main == "Clouds") {
-      document.body.classList = "";
-      document.body.classList.add("clouds");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage = "url('./images/cloudySky.jpeg')";
     } else if (data.weather[0].main == "Clear") {
-      document.body.classList = "";
-      document.body.classList.add("clear");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage = "url('./images/sunny.jpeg')";
     } else if (data.weather[0].main == "Rain") {
-      document.body.classList = "";
-      document.body.classList.add("Rain");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage =
+        "url('./images/natural-water-rain-drops.png')";
     } else if (data.weather[0].main == "Drizzle") {
-      document.body.classList = "";
-      document.body.classList.add("drizzle");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage =
+        "url('./images/natural-water-rain-drops.png')";
     } else if (data.weather[0].main == "Mist") {
-      document.body.classList = "";
-      document.body.classList.add("mist");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage = "url('./images/hilltops-fog.png')";
     } else if (data.weather[0].main == "Snow") {
-      document.body.classList = "";
-      document.body.classList.add("snow");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage = "url('./images/cloud-sky.png')";
     } else if (data.weather[0].main == "Haze") {
-      document.body.classList = "";
-      document.body.classList.add("haze");
+      background.style.backgroundImage = "";
+      background.style.backgroundImage = "url('./images/hilltops-fog.png')";
     }
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";
@@ -65,6 +68,12 @@ async function checkWeather(city) {
 
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
+});
+// allow search by pressing ENTER key
+searchBox.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    checkWeather(searchBox.value);
+  }
 });
 
 let getTime = () => {
