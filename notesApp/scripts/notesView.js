@@ -61,7 +61,8 @@ export default class NotesView {
                   ${body.length > MAX_BODY_LENGTH ? "..." : ""}
               </div>
               <div class="notes__small-updated">
-              <i class="bi bi-question-circle float-start  my-popover" role="button" data-bs-toggle="popover"
+              <i tabindex="0" class="bi bi-question-circle float-start  my-popover" role="button" data-bs-toggle="popover"
+              data-bs-trigger="focus"
               data-bs-title="Deleting notes "
               data-bs-content="Double click on a note to delete." ></i>
                   ${updated.toLocaleString(undefined, {
