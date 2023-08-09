@@ -3,12 +3,6 @@
   height: 600px;
   background-image: url("../images/bg-hd.jpeg");
   background-size: 100% 100%;
-  /* background: linear-gradient(
-    115deg,
-    rgb(86, 15, 26),
-    rgb(84, 20, 116),
-    rgb(108, 11, 53)
-  ); */
   background-repeat: no-repeat;
   min-height: 60vh;
 }
@@ -52,13 +46,12 @@
 div.mybackground {
   background-image: url("https://img.freepik.com/free-vector/purple-planet-background_23-2147520838.jpg?size=626&ext=jpg&uid=R106077481&ga=GA1.1.254563334.1685281177&semt=ais");
   background-size: cover;
-  /* height: 100vh; */
 }
 
 footer img {
   width: 40px;
   bottom: 40px;
-  filter: drop-shadow(5px 5px 0.7rem rgb(157, 171, 182));
+  filter: drop-shadow(5px 5px 0.7rem rgb(16, 118, 196));
 }
 
 div.myText {
@@ -112,6 +105,7 @@ p.mainP,
 .services {
   opacity: 0;
   transform: translateX(100%);
+
   animation: slideLeft 3s ease-out 1 forwards;
   animation-delay: 1.6s;
 }
@@ -123,7 +117,6 @@ p.mainP,
 
   100% {
     transform: translateX(0%) translatey(0%);
-
     opacity: 1;
   }
 }
