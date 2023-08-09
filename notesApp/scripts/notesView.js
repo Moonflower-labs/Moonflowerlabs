@@ -44,6 +44,14 @@ export default class NotesView {
         const updatedBody = inpBody.value.trim();
 
         this.onNoteEdit(updatedTitle, updatedBody);
+
+        // Reinitialize popovers after updating the note
+        const popoverTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="popover"]'
+        );
+        const popoverList = Array.from(popoverTriggerList).map(
+          (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+        );
       });
     });
 
