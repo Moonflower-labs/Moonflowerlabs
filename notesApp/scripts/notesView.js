@@ -29,6 +29,13 @@ export default class NotesView {
 
     btnAddNote.addEventListener("click", () => {
       this.onNoteAdd();
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = Array.from(popoverTriggerList).map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
     });
 
     [inpTitle, inpBody].forEach((inputField) => {
@@ -54,7 +61,9 @@ export default class NotesView {
                   ${body.length > MAX_BODY_LENGTH ? "..." : ""}
               </div>
               <div class="notes__small-updated">
-              <i class="bi bi-question-circle float-start " role="button" data-bs-container="body"  data-bs-toggle="popover" title="Popover title" data-bs-content="Double click to delete."></i>
+              <i class="bi bi-question-circle float-start  my-popover" role="button" data-bs-toggle="popover"
+              data-bs-title="Deleting notes "
+              data-bs-content="Double click on a note to delete." ></i>
                   ${updated.toLocaleString(undefined, {
                     dateStyle: "full",
                     timeStyle: "short",
@@ -96,6 +105,14 @@ export default class NotesView {
 
           if (doDelete) {
             this.onNoteDelete(noteListItem.dataset.noteId);
+
+            // Reinitialize popovers after deleting the note
+            const popoverTriggerList = document.querySelectorAll(
+              '[data-bs-toggle="popover"]'
+            );
+            const popoverList = Array.from(popoverTriggerList).map(
+              (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+            );
           }
         });
       });

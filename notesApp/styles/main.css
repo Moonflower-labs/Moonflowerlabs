@@ -62,3 +62,8 @@
 i {
   color: rgb(78, 71, 71);
 }
+/* .my-popover {
+  --bs-popover-bg: beige;
+  --bs-popover-body-color: #e7fc03;
+  --bs-popover-header-bg: #d89251;
+} */
