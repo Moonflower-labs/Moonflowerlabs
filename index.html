@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <!-- * * navbar * * -->
-
     <nav
       class="navbar bg-dark navbar-expand-lg sticky-top p-0"
       data-bs-theme="dark"
@@ -78,8 +76,8 @@
       </div>
     </nav>
     <!-- * * home * * -->
-    <section id="home">
-      <div class="homeSection bg-black container-fluid overflow-hidden h-50">
+    <section id="home" class="overflow-x-hidden">
+      <div class="homeSection bg-black container-fluid h-50">
         <div class="row justify-content-around align-items-center text-white">
           <div class="col-md-8 col-sm-10 p-2 text-center mt-4">
             <p class="h1 fw-bold display-1 py-2">
@@ -178,7 +176,7 @@
       </div>
     </section>
     <!-- * * projects * * -->
-    <section id="projects" class="bg-">
+    <section id="projects" class="overflow-x-hidden">
       <div class="container-fluid overflow-hidden">
         <div class="row text-center">
           <div class="col py-2">
@@ -296,7 +294,7 @@
     </section>
     <!-- * * contact * * -->
     <!-- * * form-control, form-label, form-select, input-group, input-group-text * * -->
-    <section id="contactForm" class="contact pb-5">
+    <section id="contactForm" class="contact pb-5 overflow-x-hidden">
       <div class="container-lg text-white-50 text-center p-3">
         <h2>Contact Us</h2>
         <p class="lead">
@@ -345,28 +343,6 @@
                 <option value="Other">Other query</option>
               </select>
             </div>
-            <!-- <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineCheckbox1"
-                >option 1</label
-              >
-            </div> -->
-            <!-- <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="inlineCheckbox2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineCheckbox2"
-                >opt. 2</label
-              >
-            </div> -->
 
             <div class="form-floating mb-4 mt-5">
               <textarea
@@ -397,7 +373,7 @@
     </section>
 
     <!-- * * footer * * -->
-    <footer class="container-fluid bg-dark pt-4">
+    <footer class="container-fluid bg-dark pt-4 overflow-x-hidden">
       <div class="row">
         <div class="col d-flex flex-wrap h-auto justify-content-around">
           <img src="./images/html5.png" alt="logo" />
