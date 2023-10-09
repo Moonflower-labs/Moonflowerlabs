@@ -1,0 +1,36 @@
+body {
+  background-color: honeydew;
+}
+nav {
+  border: 1px solid cadetblue;
+  background: #904abe;
+}
+header,
+footer {
+  background: linear-gradient(45deg, #4385f6, #e87fe8);
+  color: antiquewhite;
+  font-family: fantasy;
+}
+span.brand {
+  color: rgb(119, 36, 186);
+  font-size: 1.6rem;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a.nav-link:hover {
+  color: #e9c618;
+}
+a.nav-link {
+  color: antiquewhite;
+  font-size: 1.2rem;
+}
+hr {
+  color: #e87fe8;
+}
+span.list {
+  font-weight: bold;
+}
+ul {
+  list-style-position: inside;
+}
