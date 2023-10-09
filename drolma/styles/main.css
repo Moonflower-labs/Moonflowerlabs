@@ -34,3 +34,7 @@ span.list {
 ul {
   list-style-position: inside;
 }
+section#home {
+  background-color: #1e2a2a;
+  color: antiquewhite;
+}
