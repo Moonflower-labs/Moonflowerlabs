@@ -29,11 +29,15 @@
 //     return newsItem;
 //   });
 
-//   // newsItems.forEach((newsItem) => {
-//   //   newsDiv.appendChild(newsItem);
-//   // });
-// });
 document.querySelector(".card").addEventListener("click", function () {
   // Toggle the 'flipped' class on the card element
   this.classList.toggle("flipped");
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    const date = new Date();
+    yearSpan.textContent = date.getFullYear();
+  }
 });
