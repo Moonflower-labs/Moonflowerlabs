@@ -1,3 +1,4 @@
+window.location.href = "https://portfolio-42z.pages.dev/";
 // //* fetching news
 // const newsApi =
 //   "https://newsdata.io/api/1/news?apikey=pub_2558436bc412f72d26d9e8b9c46242bccbde2&q=Software%20crypto&language=en&category=technology";
